@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding:16px;
+  background: rgba(33, 9, 47, 1);
+  height: auto;
+  overflow: inherit;
+}
+
+.info-card {
+
+  position: relative;
+  
+}
+
+.info {
+  position: absolute;
+  z-index: 2;
+  margin-top: 126px;
+}
+
+.arka {
+
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 31px;
+}
+
+input + .error {
+  display: none;
+}
+
+
+
+#cardNumber:valid {
+
+
+  color: green;
+}
+
+#cardNumber:valid + .error {
+
+  display:none;
+}
+
+#cardNumber:invalid + .error{
+
+display: block;
+color:red;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+
+.arka img {
+
+  position:absolute;
+}
+
+
+.kod {
+  margin-left: 38px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(173, 181, 190, 1);
+  padding: 8px 9px 10px 202px;
+  border-radius: 4px;
+  margin-top: 60px;
+}
+
+.border {
+  background: rgba(47, 47, 47, 1);
+  width: 286px;
+  height: 34.6px;
+  top: 12.74px;
+  left: 0px;
+  gap: 0px;
+  opacity: 0px;
+  display: block;
+  position: absolute;
+}
+
+.numara {
+  position: absolute;
+    top: 85px;
+    left: 20px;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    letter-spacing: 2.200000047683716px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+}
+
+.ad-flex {
+  display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      bottom: 36px;
+      right: 17px;
+      font-family: Space Grotesk;
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 11.48px;
+      letter-spacing: 1.2857142686843872px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: rgba(255, 255, 255, 1);
+}
+
+#userName, #cardNumber {
+  font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(33, 9, 47, 1);
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid rgba(223, 222, 224, 1);
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.card-text {
+  position: relative;
+  top: 300px;
+}
+
+h3 {
+  font-family: Space Grotesk;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(33, 9, 47, 1);
+}
+
+form {
+  display: flex;
+      flex-direction: column;
+      gap: 9px;
+margin-bottom: 10px;
+
+}
+
+#numberM , #numberY {
+
+  padding: 11px 16px;
+  border-radius: 8px;
+  width: 65%;
+  border: 1px solid rgba(223, 222, 224, 1);
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.grid {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: flex-start;
+    align-content: center;
+}
+
+#cvc  {
+
+font-family: Space Grotesk;
+font-size: 18px;
+font-weight: 500;
+line-height: 22.97px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(33, 9, 47, 1);
+padding: 11px 16px;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid rgba(223, 222, 224, 1);
+
+}
+
+.cvc-flex {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 99px;
+  margin-bottom: 9px;
+}
+
+.btn {
+
+  padding: 15px 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  position: absolute;
+  text-align: center;
+  background: rgba(33, 9, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.info-arka {
+  position: relative;
+    top: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-arka img {
+    margin-bottom: 20px;
+}
+
+.info-arka h4 {
+
+  font-family: Space Grotesk;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.73px;
+  letter-spacing: 3.422222137451172px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(33, 9, 47, 1);
+  margin-bottom: 7px;
+}
+
+.info-arka p {
+  font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(143, 134, 148, 1);
+    margin-bottom: 25px;
+}
+
+.info-arka button {
+
+  padding: 15px 124px;
+    border-radius: 8px;
+    background: rgba(33, 9, 47, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width:1280px) {
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+  }
+
+
+  .info-card {
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #2b0548, #491870);
+        padding: 20px;
+  }
+
+
+  form {
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        padding: 40px 200px;
+        background: white;
+        border-radius: 8px;
+        position: relative;
+        bottom: 150px;
+  }
+
+  .btn{
+    width: 55%;
+    background: rgba(33, 9, 47, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    top: 240px;
+    left: 203px;
+  }
+
+  .info-arka {
+    top:37px;
+  }
+
+  .arka {
+    bottom: 406px;
+    left: 330px;
+    z-index: 1;
+  }
+
+  .info {
+    top: 200px;
+    left: 280px;
+  }
+
+  #userName:hover {
+    border-color:  rgba(99, 72, 254, 1);
+  
+  }
+
+  #cardNumber:hover {
+    border-color:  rgba(99, 72, 254, 1);
+  
+  }
+  #numberM:hover {
+    border-color:  rgba(99, 72, 254, 1);
+  
+  }
+  #numberY:hover {
+    border-color:  rgba(99, 72, 254, 1);
+  
+  }
+  #cvc:hover {
+    border-color:  rgba(99, 72, 254, 1);
+  
+  }
+  
+}
+
